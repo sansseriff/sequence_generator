@@ -777,6 +777,7 @@ def main():
             # encode a string as bits, then convert the bits to PPM symbols
             data_str = params["ppm"]["data"]["str_data"]
             c = BitArray(str.encode(data_str))
+            print(str.encode(data_str))
             length = int(math.log2(params["ppm"]["m_value"]))
             encodable_length = (len(c.bin)//length)*length
             data = []

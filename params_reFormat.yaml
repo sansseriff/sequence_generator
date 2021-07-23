@@ -4,10 +4,10 @@ awg:
 
 system:
   ### Mode ### PPM-like data or QKD type data
-  mode: regular #options are "ppm" or "regular"
-  laser_rate: 6.125 # GHz
+  mode: ppm #options are "ppm" or "regular"
+  laser_rate: 20 # GHz
   divider: 8 # set to -1 for automatic divider.
-  sample_rate_override: 91.875 # GSamples/s. set to -1 for automatic sample rate (Clock input range 3)
+  sample_rate_override: -1 #91.875 # GSamples/s. set to -1 for automatic sample rate (Clock input range 3)
   # note: as of 7.20.2021, usage of sample_rate_override assumes sample rate is an integer multiple of laser rep rate
 
 pulse:
@@ -61,8 +61,7 @@ ppm: #used if mode is set to "ppm"
               That flesh is heir to 'tis a consummation
               Devoutly to be wish'd.
 
-
-
+    img_data: .\rover_l.png
 
 Output:
   file_save: True
